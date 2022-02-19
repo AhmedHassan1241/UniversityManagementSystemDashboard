@@ -20,6 +20,10 @@ const exams = lazy(() => import("./views/apps/exams/List"));
 const editExam = lazy(() => import("./views/apps/exams/edit/Edit"));
 const createExam = lazy(() => import("./views/apps/exams/create/Create"));
 
+const lectures = lazy(() => import("./views/apps/lectures/List"));
+const editLecture = lazy(() => import("./views/apps/lectures/edit/Edit"));
+const createLecture = lazy(() => import("./views/apps/lectures/create/Create"));
+
 const chat = lazy(() => import("./views/apps/chat/Chat"));
 const todo = lazy(() => import("./views/apps/todo/Todo"));
 const calendar = lazy(() => import("./views/apps/calendar/Calendar"));
@@ -248,6 +252,9 @@ class AppRouter extends React.Component {
           <AppRoute path="/exams" exact component={exams} />
           <AppRoute path="/exams/create" exact component={createExam} />
           <AppRoute path="/exams/:id" exact component={editExam} />
+          <AppRoute path="/lectures" exact component={lectures} />
+          <AppRoute path="/lectures/create" exact component={createLecture} />
+          <AppRoute path="/lectures/:id" exact component={editLecture} />
           <AppRoute path="/chat" component={chat} />
           <AppRoute
             path="/todo"

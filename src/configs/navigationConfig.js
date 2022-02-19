@@ -42,11 +42,11 @@ const navigationConfig = [
   },
   {
     id: "chat",
-    title: "Chat",
+    title: "Lectures",
     type: "item",
     icon: <Icon.MessageSquare size={20} />,
     permissions: ["admin", "editor"],
-    navLink: "/chat",
+    navLink: "/lectures",
   },
   {
     id: "todo",
